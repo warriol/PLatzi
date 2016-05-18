@@ -1,0 +1,64 @@
+﻿@model Desafio3_1_MVC.Models.Imagen
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Imagen</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FormatoImagen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FormatoImagen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Patch)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Patch)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TamanoWidth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TamanoWidth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TamanoHeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TamanoHeight)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

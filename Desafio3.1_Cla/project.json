@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0-*",
+  "description": "Desafio3.1_Cla Console Application",
+  "authors": [ "Wilson" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+  },
+
+  "commands": {
+    "Desafio3.1_Cla": "Desafio3.1_Cla"
+  },
+
+  "frameworks": {
+    "dnx451": {
+      "dependencies": {
+        "Desafio3.1": "1.0.0-*"
+      }
+    },
+    "dnxcore50": {
+      "dependencies": {
+        "Microsoft.CSharp": "4.0.1-beta-23516",
+        "System.Collections": "4.0.11-beta-23516",
+        "System.Console": "4.0.0-beta-23516",
+        "System.Linq": "4.0.1-beta-23516",
+        "System.Threading": "4.0.11-beta-23516"
+      }
+    }
+  }
+}

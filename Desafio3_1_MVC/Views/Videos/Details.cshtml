@@ -1,0 +1,66 @@
+﻿@model Desafio3_1_MVC.Models.Video
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Video</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Duracion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Duracion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FormatoVideo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FormatoVideo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Patch)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Patch)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TamanoWidth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TamanoWidth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TamanoHeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TamanoHeight)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

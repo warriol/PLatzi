@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net45": {
+      "wrappedProject": "../../Desafio3.1/Desafio3.1.csproj",
+      "bin": {
+        "assembly": "../../Desafio3.1/obj/{configuration}/Desafio3.1.dll",
+        "pdb": "../../Desafio3.1/obj/{configuration}/Desafio3.1.pdb"
+      },
+      "dependencies": {
+        "EntityFramework": "6.1.3",
+        "Microsoft.ApplicationInsights": "2.0.0",
+        "Microsoft.ApplicationInsights.Agent.Intercept": "1.2.1",
+        "Microsoft.ApplicationInsights.DependencyCollector": "2.0.0",
+        "Microsoft.ApplicationInsights.JavaScript": "0.22.9-build00167",
+        "Microsoft.ApplicationInsights.PerfCounterCollector": "2.0.0",
+        "Microsoft.ApplicationInsights.Web": "2.0.0",
+        "Microsoft.ApplicationInsights.WindowsServer": "2.0.0",
+        "Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel": "2.0.0",
+        "Microsoft.AspNet.WebApi": "5.2.3",
+        "Microsoft.AspNet.WebApi.Client": "5.2.3",
+        "Microsoft.AspNet.WebApi.Core": "5.2.3",
+        "Microsoft.AspNet.WebApi.WebHost": "5.2.3",
+        "Microsoft.CodeDom.Providers.DotNetCompilerPlatform": "1.0.0",
+        "Microsoft.Net.Compilers": "1.0.0",
+        "Newtonsoft.Json": "6.0.4"
+      }
+    }
+  }
+}

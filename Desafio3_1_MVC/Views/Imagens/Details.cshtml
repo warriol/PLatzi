@@ -1,0 +1,58 @@
+﻿@model Desafio3_1_MVC.Models.Imagen
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Imagen</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FormatoImagen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FormatoImagen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Patch)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Patch)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TamanoWidth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TamanoWidth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TamanoHeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TamanoHeight)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
